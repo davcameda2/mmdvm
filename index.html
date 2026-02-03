@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Můj DMR Dashboard – Kdo mluví teď</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Můj vlastní DMR Dashboard</h1>
+    <p>Aktuální aktivita na hotspotu (obnovuje se každých 6 sekund)</p>
+  </header>
+
+  <main>
+    <table id="heardTable">
+      <thead>
+        <tr>
+          <th>Čas</th>
+          <th>Od (callsign / ID)</th>
+          <th>TG</th>
+          <th>Status</th>
+          <th>Událost</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
