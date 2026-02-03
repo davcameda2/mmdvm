@@ -1,4 +1,4 @@
-const API_URL = 'http://10.0.1.61/muj_lastheard.php';  // ← změň na svou IP, pokud .local nefunguje
+const API_URL = '10.0.1.61';  // ← změň na svou IP, pokud .local nefunguje
 
 async function nactiData() {
   try {
@@ -32,4 +32,5 @@ async function nactiData() {
 
 // Spustit hned a pak každých 6 sekund
 nactiData();
+
 setInterval(nactiData, 6000);
